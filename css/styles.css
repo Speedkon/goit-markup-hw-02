@@ -7,6 +7,7 @@
     --ocean-color: #404BBF;
 }
 body {
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     background: var(--white-color);
 }
@@ -15,13 +16,14 @@ body {
 }
 .link {
     text-decoration: none;
+    font-style: normal;
 }
 /* ----------------------- HEADER --------------------- */
 .header {
     background: var(--white-color);
 }
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -41,12 +43,20 @@ body {
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
 }
+.header-link:hover,
+.header-link:focus {
+    color: var(--ocean-color)
+}
 .address-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+}
+.address-link:hover,
+.address-link:focus {
+    color: var(--ocean-color)
 }
 /* ----------------------- MAIN --------------------- */
 .hero {
@@ -62,12 +72,19 @@ body {
 }
 .hero-btn {
     background: var(--iris-color);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
     color: var(--white-color);
+    cursor: pointer
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--ocean-color)
 }
 .hang-title {
     font-weight: 500;
@@ -148,6 +165,7 @@ body {
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--iris-color);
+    cursor: pointer
 }
 .portfolio-search-btn:hover {
     background: var(--ocean-color);
