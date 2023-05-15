@@ -159,6 +159,7 @@ body {
 }
 /* ----------------------- PORTFOLIO --------------------- */
 .portfolio-search-btn {
+    font-family: "Roboto", sans-serif;
     background: var(--cloud-color);
     font-weight: 500;
     font-size: 16px;
@@ -170,7 +171,7 @@ body {
     color: var(--iris-color);
     cursor: pointer
 }
-.portfolio-search-btn:hover
+.portfolio-search-btn:hover,
 .portfolio-search-btn:focus {
     background: var(--ocean-color);
     color: var(--white-color);
